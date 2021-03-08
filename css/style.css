@@ -1,0 +1,115 @@
+@charset "UTF-8";
+
+/* 共通部分 */
+html{
+  font-size: 100%;
+}
+
+body{
+  font-family: "Yu Gothic Medium", "游ゴシック Medium", YuGothic, "游ゴシック体", "ヒラギノ角ゴ Pro W3", sans-serif;
+  line-height: 1.7;
+  color: #432;
+}
+
+a{
+  text-decoration: none;
+}
+
+img{
+  width: 100%;
+}
+/* 共通部分終わり */
+.page-header{
+  display: flex;
+  justify-content: space-between; /* 両端に設置する設定 */
+}
+
+.wrapper{
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0 4%; /* スマートフォン向けの余白設定 */
+}
+
+.logo{
+  width: 210px;
+  margin-top: 14px;
+}
+
+.main_nav{
+  display: flex;
+  list-style: none;
+  margin-top: 34px;
+  font-size: 1.25rem;
+  text-transform: uppercase;
+}
+
+.main_nav a{
+  color: #432;
+}
+
+.main_nav a:hover{
+  color: #0bd;
+}
+.main_nav li{
+  margin-left: 36px;
+}
+
+.home-content{
+  text-align: center;
+  margin-top: 10%;
+}
+
+.home-content p{
+  font-size: 1,125rem;
+  margin: 10px 0 42px;
+}
+
+/* 見出し */
+.page-title{
+  font-size: 4rem;
+  font-family: 'Philosopher', serif;
+  text-transform: uppercase;
+  font-weight: normal;
+}
+/* ボタン */
+.button{
+  font-size: 1.375rem;
+  background: #0bd;
+  color: #fff;
+  border-radius: 5px;
+  padding: 18px 32px;
+}
+
+.button:hover{
+  background: #0090aa;
+}
+
+/* 背景画像 */
+.big-bg{
+  background-size: cover; /* 画像の縦横比を保ったまま、画面いっぱいに広げたい場合の設定 */
+  background-position: center top;
+  background-repeat: no-repeat;
+}
+
+#home{
+  background-image: url('../images/main-bg.jpg');
+  /*
+  background-color: #0bd;
+  background-blend-mode: hard-light; /* ブレンドモード、ハードライトの指定 */
+
+  min-height: 100vh;
+}
+
+#home .page-title{
+  text-transform: none;
+}
+/* News Page */
+#news {
+  background-image: url(../images/news-bg.jpg);
+  height: 270px;
+  margin-bottom: 40px;
+}
+
+#news .page-title{
+  text-align: center;
+}
