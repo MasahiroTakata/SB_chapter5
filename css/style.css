@@ -116,7 +116,8 @@ img{
 
 /* 記事部分 */
 article{
-  width: 74%;
+  width: 60%;
+  order: 2;
 }
 
 .post-info{
@@ -159,6 +160,12 @@ article{
 /* サイドバー */
 aside{
   width: 22%;
+  order: 3;
+}
+
+/* バナー */
+.ad{
+  order: 1; /* これで左から配置の順番を設定できる */
 }
 
 aside p{
