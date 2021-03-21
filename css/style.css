@@ -214,6 +214,45 @@ footer p{
   color: #fff;
   font-size: 0.875rem;
 }
+/* メニュー画面 */
+#menu{
+  background-image: url('../images/menu-bg.jpg');
+  min-height: 60vh;
+}
+
+.menu-content{
+  max-width: 560px;
+  margin-top: 10%;
+}
+
+.menu-content .page-title{
+  text-align: center;
+}
+
+.menu-content p{
+  font-size: 1.125rem;
+  margin: 10px 0 0;
+}
+
+.grid{
+  display: grid;
+  gap: 26px; /* タイル間の縦横の幅指定 */
+  /* auto-fitで画面幅によって、タイルを繰り返す数が変化する（見やすさを保ってくれる） */
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  margin-top: 6%;
+  margin-bottom: 50px;
+}
+
+.big-box{
+  grid-column: 1/3; /* 【横範囲】始まりのライン/終わりのライン */
+  grid-row: 1/3;
+}
+
+.big-box img{
+  height: 94%;
+  width: 100%;
+  object-fit: cover; /* 画像の歪みをなくしてくれる */
+}
 
 /* モバイル版（メディアクエリーと呼ばれる） */
 @media (max-width: 600px){ /* 600px以下になると設定が適用される */
@@ -281,5 +320,18 @@ footer p{
 
   .post-title, .post-cat{
     margin-left: 80px;
+  }
+  /* menuページ */
+  .menu-content{
+    margin-top: 20%;
+  }
+
+  .big-box{
+    grid-column: auto;
+    grid-row: auto;
+  }
+
+  .big-bg img{
+    height: auto;
   }
 }
