@@ -217,7 +217,7 @@ footer p{
 /* メニュー画面 */
 #menu{
   background-image: url('../images/menu-bg.jpg');
-  min-height: 60vh;
+  min-height: 100vh; /* 本来60vhに設定していた */
 }
 
 .menu-content{
@@ -253,7 +253,21 @@ footer p{
   width: 100%;
   object-fit: cover; /* 画像の歪みをなくしてくれる */
 }
+/* メニューをヌルッと表示させるアニメーション用 */
+.fade-in {
+  opacity: 0; /* 最初は隠す */
+  transition-duration: 500ms;
+  transition-property: opacity, transform;
+}
 
+.fade-in-up { /* 下からふわっとアニメーションする */
+  transform: translate(0, 50px);
+}
+
+.scroll-in { /* スクロールイベントで付与される */
+  opacity: 1;
+  transform: translate(0, 0);
+}
 /* お問い合わせページ */
 #contact{
   background-image: url('../images/contact-bg.jpg');
