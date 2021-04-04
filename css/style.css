@@ -89,6 +89,7 @@ img{
   background-size: cover; /* 画像の縦横比を保ったまま、画面いっぱいに広げたい場合の設定 */
   background-position: center top;
   background-repeat: no-repeat;
+  position: relative;
 }
 
 #home{
@@ -234,6 +235,19 @@ footer p{
   margin: 10px 0 0;
 }
 
+#scroll-msg{
+  position: absolute;
+  right: 15px;
+  bottom: 10px;
+  font-size: 1.125rem;
+  transition-duration: 500ms;
+}
+
+.fade-out{
+  opacity: 0;
+  transform: translate(0, 0);
+  transition-duration: 500ms;
+}
 .grid{
   display: grid;
   gap: 26px; /* タイル間の縦横の幅指定 */
