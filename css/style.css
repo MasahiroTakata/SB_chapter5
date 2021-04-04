@@ -1,6 +1,8 @@
 @charset "UTF-8";
 
-/* 共通部分 */
+/* 
+  共通部分 
+*/
 html{
   font-size: 100%;
 }
@@ -18,7 +20,7 @@ a{
 img{
   width: 100%;
 }
-/* 共通部分終わり */
+
 .page-header{
   display: flex;
   justify-content: space-between; /* 両端に設置する設定 */
@@ -104,7 +106,24 @@ img{
 #home .page-title{
   text-transform: none;
 }
-/* News Page */
+
+/* footer */
+footer{
+  background-color: #432;
+  text-align: center;
+  padding: 26px 0;
+}
+footer p{
+  color: #fff;
+  font-size: 0.875rem;
+}
+/*
+  共通部分終わり
+*/
+
+/* 
+  News Page 
+*/
 #news {
   background-image: url(../images/news-bg.jpg);
   height: 270px;
@@ -114,7 +133,6 @@ img{
 #news .page-title{
   text-align: center;
 }
-
 /* 記事部分 */
 article{
   width: 60%;
@@ -163,7 +181,6 @@ aside{
   width: 22%;
   order: 3;
 }
-
 /* バナー */
 .ad{
   order: 1; /* これで左から配置の順番を設定できる */
@@ -198,24 +215,15 @@ aside p{
   border-bottom: 2px #0bd solid;
   font-weight: normal;
 }
-
 /* 記事部分＋サイドバー */
 .news-contents{
   display: flex;
   justify-content: space-between;
   margin-bottom: 50px;
 }
-/* footer */
-footer{
-  background-color: #432;
-  text-align: center;
-  padding: 26px 0;
-}
-footer p{
-  color: #fff;
-  font-size: 0.875rem;
-}
-/* メニュー画面 */
+/* 
+  メニュー画面
+*/
 #menu{
   background-image: url('../images/menu-bg.jpg');
   min-height: 100vh; /* 本来60vhに設定していた */
@@ -235,7 +243,7 @@ footer p{
   margin: 10px 0 0;
 }
 
-#scroll-msg{
+#scroll-msg{ /* お問合せページも使用している */
   position: absolute;
   right: 15px;
   bottom: 10px;
@@ -282,7 +290,9 @@ footer p{
   opacity: 1;
   transform: translate(0, 0);
 }
-/* お問い合わせページ */
+/*
+  お問い合わせページ
+*/
 #contact{
   background-image: url('../images/contact-bg.jpg');
   min-height: 100vh;
@@ -297,7 +307,6 @@ label{
   margin-bottom: 10px;
   display: block; /* これで縦並びになる */
 }
-
 /* inputの属性を指定できる */
 input[type="text"],
 input[type="email"], textarea{
@@ -329,6 +338,7 @@ input[type="submit"]{
 #location{
   padding: 4% 0;
 }
+
 #location .wrapper{
   display: flex;
   justify-content: space-between; /* 要素を等間隔に配置する */
@@ -349,7 +359,6 @@ input[type="submit"]{
 iframe{
   width: 100%; /* マップがdivからはみ出すことなく配置される */
 }
-
 /* SNSスペース */
 #sns{
   background-color: #FAF7F0;
@@ -391,7 +400,9 @@ iframe{
     flex-direction: column; /* これで縦並びに設定できる */
     align-items: center; /* 中央揃え */
   }
-  /* newsページ */
+  /* 
+    newsページ 
+  */
   .news-contents{
     flex-direction: column; /* 縦並びの設定 */
   }
@@ -435,7 +446,13 @@ iframe{
   .post-title, .post-cat{
     margin-left: 80px;
   }
-  /* menuページ */
+
+  .ad{
+    display: none; /* 要素自体を隠せる（非表示の箇所が埋まる） */
+  }
+  /*
+    menuページ
+  */
   .menu-content{
     margin-top: 20%;
   }
@@ -448,8 +465,9 @@ iframe{
   .big-bg img{
     height: auto;
   }
-
-  /* 問い合わせページ */
+  /*
+    問い合わせページ
+  */
   #contact .page-title{
     margin-top: 40px;
   }
